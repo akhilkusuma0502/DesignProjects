@@ -1,2 +1,3 @@
 # myProjects
-The Projects i have done are part of my course curriculum and Everyone here are available to work on these projects.
+The Projects i have done are part of my course curriculum
+Everyone whoever is interested is allowed to work on the projects.
