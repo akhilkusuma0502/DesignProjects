@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ElibManagementSystem_PresentationLayer.Layout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ElibManagementSystem_PresentationLayer"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="550">
+    <UserControl.Background>
+        <ImageBrush ImageSource="ElibA_Images/Elibrary_Background_Image.JPG" Opacity="0.6">
+
+        </ImageBrush>
+    </UserControl.Background>
+    <DockPanel>
+
+        <StackPanel DockPanel.Dock="Top" Height="80" VerticalAlignment="Top" Orientation="Horizontal" Background="CornflowerBlue" Opacity="0.8">
+            <Image Source="ElibA_Images/ElibLogo.JPG" Height="80" HorizontalAlignment="Left" Opacity="1"/>
+            <Label FontFamily="Verdana" FontStyle="Normal" Width="412" Margin="10,10,10,40" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Content="E-LIBRARY MANAGEMENT SYSTEM"
+                   HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Background="PaleTurquoise" Opacity="1" DockPanel.Dock="Bottom" Height="60"
+                    VerticalAlignment="Bottom">
+            <TextBlock TextAlignment="Justify" TextWrapping="Wrap" Margin="25,5,9.6,0" ><Run Text="&#169;CopyRight-2017 ELib Inc is a start-up business that will make available on the Web a collection of technical papers of current interest for engineers, lawyers, doctors and other professionals as pdf's."/>"</TextBlock>
+        </StackPanel>
+        <Grid Height="160" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="408*"/>
+                <ColumnDefinition Width="41*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+    </DockPanel>
+</UserControl>
