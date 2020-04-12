@@ -1,0 +1,163 @@
+﻿<Page x:Class="Elib_Management_System_Presentation_Layer.EditProfile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ElibManagementSystem_PresentationLayer"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="450" Loaded="EditProfile_Loaded"  x:Name="EditProfile12"
+      Title="EditProfile">
+
+    <Grid>
+        <local:Layout UseLayoutRounding="True" Loaded="Layout_Loaded"/>
+        <Canvas Margin="318,37,-318,377">
+            <Button x:Name="btnhome" Content="Home" Canvas.Left="221" Canvas.Top="10" Click="btnhome_Click" Width="75"/>
+            <Button x:Name="btnlogout" Content="Logout" Canvas.Left="301" Canvas.Top="10" Click="btnlogout_Click" Width="75"/>
+            <Label x:Name="lblname" Content="" Canvas.Left="10" Canvas.Top="7" FontFamily="Bodoni MT" RenderTransformOrigin="-3.6,0.652" Foreground="Red" FontSize="14" Background="#00000000" FontWeight="Bold"/>
+        </Canvas>
+        <DockPanel Margin="0,125,0,85" Background="AntiqueWhite" Opacity="0.9" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Verdana"  FontSize="10">PROFILE</Label>
+            <ScrollViewer Margin="0,-0.2,0,10.4" FontFamily="Trebuchet MS"  >
+                <StackPanel Margin="0,40,0,0">
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblFirstName"
+                   Content="FirstName :"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <TextBox x:Name="txtFirstName"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Padding="0,5" Width="300" HorizontalAlignment="Left" />
+
+                        <Label x:Name="lblLastName"
+                   Content="LastName :"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <TextBox x:Name="txtLastName"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Padding="0,5" Width="300" HorizontalAlignment="Left" />
+
+
+                        <Label x:Name="lblDateOfBirth"
+                   Content="Date Of Birth :"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <DatePicker x:Name="dtpDateOfBirth"
+                     Grid.Row="3"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                      Margin="0,3" HorizontalAlignment="Left" Width="300"  />
+
+
+                        <Label x:Name="lblAddress"
+                   Content="Address :"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <TextBox x:Name="txtAddress"
+                     Grid.Row="4"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Padding="0,5" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" Width="300" HorizontalAlignment="Left" />
+
+                        <Label x:Name="lblLandlineNumber"
+                   Content="Landline Number :"
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <TextBox x:Name="txtLandlineNumber"
+                     Grid.Row="5"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Padding="0,5" Width="300" HorizontalAlignment="Left" />
+
+                        <Label  Content="Mobile Number :"  Grid.Row="6"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" ></Label>
+                        <TextBox x:Name="txtMobileNumber"
+                     Grid.Row="6"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Padding="0,5" Width="300" HorizontalAlignment="Left" />
+
+
+                        <Label x:Name="lblAreaOfInterest"
+                   Content="Area Of Interest :"
+                   Grid.Row="7"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <StackPanel Grid.Row="7"                                       Grid.Column="1"                                    Orientation="Horizontal">
+                            <CheckBox x:Name="chkEngineering"                  
+                     VerticalAlignment="Center"
+                     Padding="0" Content="Enginering" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="10"/>
+                            <CheckBox x:Name="chkMedical"
+                    
+                     VerticalAlignment="Center"
+                     Padding="0" Content="Medical"  Margin="10"/>
+                            <CheckBox x:Name="chkLaw"
+                     
+                     VerticalAlignment="Center"
+                     Padding="0" Content="Law"  Margin="10"/>
+                        </StackPanel>
+
+                        <Label x:Name="lblGender"
+                   Content="Gender :"
+                   Grid.Row="8"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <StackPanel  Grid.Row="8"                                       Grid.Column="1"                                    Orientation="Horizontal">
+                            <RadioButton x:Name="rbtnMale" Content="Male" Margin="10"></RadioButton>
+                            <RadioButton x:Name="rbtnFemale" Content="Female" Margin="10"></RadioButton>
+                        </StackPanel>
+
+
+                        <Label x:Name="lblUserType"
+                   Content="User Type :"
+                   Grid.Row="9"
+                   Grid.Column="0"
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Trebuchet MS" />
+                        <StackPanel  Grid.Row="9"                                       Grid.Column="1"                                    Orientation="Horizontal">
+                            <RadioButton x:Name="rbtnSubscriber" Content="Subscriber" Margin="10" IsEnabled="False"></RadioButton>
+                            <RadioButton x:Name="rbtnNonSubscriber" Content="Non-Subscriber" Margin="10" IsEnabled="False"></RadioButton>
+
+                        </StackPanel>
+
+                        <Button x:Name="btnupdate"  Grid.Row="12"
+                     Grid.Column="1" Content="Update Details" FontSize="15" Margin="140,2,-18,-8" Padding="10,1,10,1" Width="160" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.RowSpan="2" Height="23" VerticalAlignment="Top" Click="btnupdate_Click_1"  />
+
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+
+
+
+        </DockPanel>
+    </Grid>
+</Page>
