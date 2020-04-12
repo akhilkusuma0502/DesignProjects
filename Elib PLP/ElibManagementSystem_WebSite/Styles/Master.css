@@ -1,0 +1,87 @@
+﻿
+.maincontent {
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 15px;
+    background-color: antiquewhite;
+}
+               
+             .rightsidebar
+            {
+                display:inline-block;
+                width:25%;
+                float:right;
+                margin-top:150px;
+                background-color:antiquewhite;
+            }
+            .auto-style6 {
+                display: inline-block;
+                width: 25%;
+                float: left;
+                margin-top: 150px;
+                margin-left: 10px;
+                margin-bottom:20px;
+                background-color: antiquewhite;
+            }
+            /**/
+            body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+        display:grid ;
+          background-image:url('ElibA_Images/books.jpg'); 
+          background-size:unset;
+          background-repeat:no-repeat;
+          background-position:center;
+    }
+   .auto-style1 {
+        width: 104%;
+        position: fixed;
+        color: #fff;
+        bottom: -22px;
+        left: -24px;
+        height: 120px;
+        padding: 10px 0;
+        background: #333;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container {
+        width: 80%;
+        margin:auto;
+    } /* Center the DIV horizontally */
+    
+    nav,a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+   
+    .auto-style3 {
+        width: 101%;
+        position: fixed;
+        color: #fff;
+        top: 0;
+        height: 180px;
+        opacity: 0.85;
+        left: -3px;
+        padding: 10px 0;
+        background: #333;
+    }
+    .auto-style4 {
+        margin-left: 25px;
+        margin-bottom:20px;
+        margin-right:20px;
+        text-align:justify;
+    }
+    .auto-style6 {
+        margin-left: 80px;
+    }
+            .auto-style7 {
+                display: inline-block;
+                width: 22%;
+                float: left;
+                margin-top: 105px;
+                background-color: gainsboro;
+ }
