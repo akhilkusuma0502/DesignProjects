@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_PresentationLayer", "Elib_Management_System_Presentation_Layer\ElibManagementSystem_PresentationLayer.csproj", "{281CFD40-06FF-404A-A3FA-EAE63590E2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_DataAccessLayer", "ElibManagementSystem_DataAccessLayer\ElibManagementSystem_DataAccessLayer.csproj", "{3029CCB9-F3F2-4F72-942F-7FFB48189E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_Exceptions", "ElibManagementSystem_Exceptions\ElibManagementSystem_Exceptions.csproj", "{5CF11E24-79F8-4DA6-B61C-0D880CB61F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_Entities", "ElibManagementSystem_Entities\ElibManagementSystem_Entities.csproj", "{FE57D341-C782-4AD9-BB34-03333E3E4FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_BusinessLogicLayer", "ElibManagementSystem_BusinessLogicLayer\ElibManagementSystem_BusinessLogicLayer.csproj", "{4232B2BE-09B5-4FAF-BFDC-6E929B9C2BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElibManagementSystem_WebSite", "ElibManagementSystem_WebSite\ElibManagementSystem_WebSite.csproj", "{1467D387-81C0-4D4A-8E63-166497034930}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{281CFD40-06FF-404A-A3FA-EAE63590E2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281CFD40-06FF-404A-A3FA-EAE63590E2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281CFD40-06FF-404A-A3FA-EAE63590E2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281CFD40-06FF-404A-A3FA-EAE63590E2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3029CCB9-F3F2-4F72-942F-7FFB48189E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3029CCB9-F3F2-4F72-942F-7FFB48189E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3029CCB9-F3F2-4F72-942F-7FFB48189E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3029CCB9-F3F2-4F72-942F-7FFB48189E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF11E24-79F8-4DA6-B61C-0D880CB61F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF11E24-79F8-4DA6-B61C-0D880CB61F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF11E24-79F8-4DA6-B61C-0D880CB61F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF11E24-79F8-4DA6-B61C-0D880CB61F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE57D341-C782-4AD9-BB34-03333E3E4FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE57D341-C782-4AD9-BB34-03333E3E4FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE57D341-C782-4AD9-BB34-03333E3E4FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE57D341-C782-4AD9-BB34-03333E3E4FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4232B2BE-09B5-4FAF-BFDC-6E929B9C2BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4232B2BE-09B5-4FAF-BFDC-6E929B9C2BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4232B2BE-09B5-4FAF-BFDC-6E929B9C2BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4232B2BE-09B5-4FAF-BFDC-6E929B9C2BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1467D387-81C0-4D4A-8E63-166497034930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1467D387-81C0-4D4A-8E63-166497034930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1467D387-81C0-4D4A-8E63-166497034930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1467D387-81C0-4D4A-8E63-166497034930}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
