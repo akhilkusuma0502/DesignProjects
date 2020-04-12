@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ElibA.master.cs" Inherits="ElibManagementSystem_WebSite.ElibA" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Styles/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+    $(document).ready(function () {
+               
+                var windowWidth = $(window).width();
+               
+               if (windowWidth > 768) {
+                   
+                    $('#body').css('height', '900px');
+                    return;
+                }
+
+                if (windowWidth > 500) {
+               
+                        $('#body').css('height', '1000px');
+                        return;
+                    }
+                 else {
+                  
+                    $('#body').css('height', '1100px');
+                    return;
+                }
+           });   
+
+    </script>
+
+
+    <style type="text/css">
+        .auto-style8 {
+            display: inline-block;
+            width: auto;
+            float: left;
+            margin-left: 80px;
+            margin-top: 150px;
+            background-color:antiquewhite;
+        }
+
+           body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+        display:grid ;
+          background-image:url('ElibA_Images/books.jpg'); 
+          background-size:unset;
+          background-repeat:no-repeat;
+          background-position:center;
+    }
+           #lblTitle
+           {
+               font-family:Courier New;
+               font-size:75px;
+               font-weight:bold;
+               text-align:center;
+               margin-left:100px;
+               margin-bottom:100px;
+           }
+        .auto-style9 {
+            width: 88%;
+            margin: auto;
+            font-size:20px;
+        }
+        .auto-style11 {
+            width: 573px;
+        }
+        .auto-style12 {
+            width: 438px;
+            float:right;
+        }
+        .auto-style13 {
+             width: 101%;
+            position: fixed;
+            bottom:0;
+            color: #fff;
+          
+            height: 100px;
+            opacity: 0.85;
+            left: -3px;
+            padding: 10px 0;
+            background: #333;
+        }
+        .auto-style14 {
+            width: 101%;
+            position: fixed;
+            color: #fff;
+            top: 0;
+            height: 180px;
+            opacity: 0.85;
+            left: -3px;
+            padding: 10px 0;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+     <form id="form1" runat="server">
+      <header class="auto-style14">
+             <asp:Image ImageUrl="~/ElibA_Images/ElibLogo.JPG" ID="Image1" runat="server" Height="116px" Width="142px" />
+          <asp:Label ID="lblTitle" runat="server" Text="ELIB-Access" Font-Bold="True" ForeColor="#33CCFF" Font-Names="Rod"></asp:Label>
+             <ajaxToolkit:AnimationExtender ID="lblTitle_AnimationExtender" runat="server" BehaviorID="lblTitle_AnimationExtender" TargetControlID="lblTitle">
+             </ajaxToolkit:AnimationExtender>
+            <div class="auto-style9">
+            <nav class="auto-style11">
+                <asp:HyperLink ID="lnkHomePage" NavigateUrl="~/HomePage.aspx" runat="server">Home</asp:HyperLink>
+                <asp:HyperLink ID="lnkRegister"  NavigateUrl="~/RegistrationPage.aspx"  runat="server">Register</asp:HyperLink>
+                <asp:HyperLink ID="lnkAboutUs"  NavigateUrl="~/About.aspx"  runat="server">About</asp:HyperLink>
+            </nav>
+                <nav class="auto-style12">
+                    <asp:Label runat="server" ID="lblWelcome" ForeColor="Red"></asp:Label>
+                 <asp:LinkButton ID="lnkEditProfile" runat="server" OnClick="lnkEditProfile_Click" PostBackUrl="~/EditProfilePage.aspx">Edit Profile</asp:LinkButton>
+                    <asp:Button ID="btnLogin" runat="server" Height="40px" Text="Login" BackColor="#00CCFF" BorderColor="#003399" Width="82px" PostBackUrl="~/LoginPage.aspx" CausesValidation="False" OnClick="btnLogin_Click" />
+                    <ajaxToolkit:RoundedCornersExtender ID="btnLogin_RoundedCornersExtender" runat="server" BehaviorID="btnLogin_RoundedCornersExtender" TargetControlID="btnLogin" />
+                    <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" Height="40px" BackColor="#00CCFF" BorderColor="#003399" Width="82px" Font-Bold="True" Font-Strikeout="False" ForeColor="Red"  />
+                    <ajaxToolkit:RoundedCornersExtender ID="btnLogout_RoundedCornersExtender" runat="server" BehaviorID="btnLogout_RoundedCornersExtender" TargetControlID="btnLogout" />
+              </nav>
+        </div>
+        </header>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+         <div>
+        <aside class="auto-style6">
+           <div id="bg" class="auto-style4">
+        <h1>ELIBAccess</h1>
+        <p class="lead">ELib Inc is a start-up business that will make available on the Web a collection of technical papers of current interest for engineers, lawyers, doctors and other professionals as pdf’s.</p>
+        <asp:Button ID="Button2" Height="30px" runat="server" Text="Learn More" BackColor="#33CCFF" BorderColor="Red" BorderStyle="Groove" Width="98px" PostBackUrl="~/About.aspx" ValidationGroup="Other" />
+            <ajaxToolkit:RoundedCornersExtender ID="RoundedCornersExtender1" runat="server" BehaviorID="Button1_RoundedCornersExtender" TargetControlID="Button2" />
+       </div>
+
+       </aside>
+         </div>
+         <div>
+        <section class="auto-style8" width:"100">
+            <div >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                 
+            </asp:ContentPlaceHolder>
+                </div>
+        </section>
+         </div>
+    </form>
+     
+        <footer class="auto-style13">
+            <div style="margin:20px 20px 20px 20px">
+        <hr />
+            <p>&copy;Copyright <%=DateTime.Now.Year %> ELIBA- All Rights Reserved </p>
+            <label>ELib Inc is a start-up business that will make available on the Web a collection of technical papers of current interest for engineers, lawyers, doctors and other professionals as pdf's.</label>      
+     </div>
+        </footer>
+     
+
+</body>
+</html>
