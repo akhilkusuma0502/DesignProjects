@@ -1,6 +1,6 @@
 # Projects
-The Projects i have done are part of my course curriculum
-Everyone whoever is interested is allowed to work on the projects.
+The Projects i have done are part of my course curriculum.
+Whoever interested is allowed to work on the projects.
 
 1. Movie Recommendation System (Python, KNN Classification, Spark) : Used Movie-lens Dataset to perform item based collaborative filtering to recommend movies based on genre of the movie. Utilized Spark to query data frames using SparkSQL.
 
